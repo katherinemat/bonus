@@ -28,3 +28,9 @@ var third = function(combine, flip) {
 };
 
 console.log(third(combine(capitalize(sentence), lastCapitalize(sentence)), flip(lastCapitalize(sentence), capitalize(sentence))));
+
+var twoExtra= function(sentence, combine) {
+  return sentence + combine;
+};
+
+console.log(twoExtra(sentence, combine(capitalize(sentence), lastCapitalize(sentence))));
