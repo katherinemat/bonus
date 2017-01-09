@@ -7,9 +7,11 @@ var capitalize = function(sentence) {
 var lastCapitalize = function(sentence) {
   return sentence.slice(-1).toUpperCase();
 };
+console.log(capitalize(sentence));
+console.log(lastCapitalize(sentence));
 
-var middle = function(sentence) {
-  return sentence.substring(1, sentence.length-1);
+var combine = function(firstLetter, lastLetter) {
+  return firstLetter + lastLetter;
 };
 
-console.log(capitalize(sentence) + middle(sentence) + lastCapitalize(sentence));
+console.log(combine(capitalize(sentence), lastCapitalize(sentence)));
