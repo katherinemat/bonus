@@ -20,4 +20,11 @@ var flip= function(lastLetter, firstLetter) {
   return lastLetter + firstLetter;
 };
 
-console.log(combine(lastCapitalize(sentence), capitalize(sentence)));
+console.log(flip(lastCapitalize(sentence), capitalize(sentence)));
+
+
+var third = function(combine, flip) {
+  return combine + flip;
+};
+
+console.log(third(combine(capitalize(sentence), lastCapitalize(sentence)), flip(lastCapitalize(sentence), capitalize(sentence))));
