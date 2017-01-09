@@ -34,3 +34,15 @@ var twoExtra= function(sentence, combine) {
 };
 
 console.log(twoExtra(sentence, combine(capitalize(sentence), lastCapitalize(sentence))));
+
+var letterCount = function(sentence) {
+  return sentence.charAt(sentence.length/2);
+};
+
+console.log(letterCount(sentence));
+
+var ninthLetter = function(sentence, letterCount) {
+  return
+};
+
+console.log
