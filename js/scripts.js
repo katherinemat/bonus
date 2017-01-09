@@ -15,3 +15,9 @@ var combine = function(firstLetter, lastLetter) {
 };
 
 console.log(combine(capitalize(sentence), lastCapitalize(sentence)));
+
+var flip= function(lastLetter, firstLetter) {
+  return lastLetter + firstLetter;
+};
+
+console.log(combine(lastCapitalize(sentence), capitalize(sentence)));
