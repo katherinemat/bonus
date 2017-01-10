@@ -41,8 +41,8 @@ var letterCount = function(sentence) {
 
 console.log(letterCount(sentence));
 
-var ninthLetter = function(sentence, letterCount) {
-  return
+var weird = function(letterCount, twoExtra) {
+  return letterCount + twoExtra;
 };
 
-console.log
+console.log(letterCount(sentence), twoExtra(sentence, combine(capitalize(sentence), lastCapitalize(sentence))));
